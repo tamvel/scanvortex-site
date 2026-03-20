@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GS1 ScanVortex</title>
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #0b3d91;
+      background: linear-gradient(135deg, #0b3d91, #0a2c6b);
       color: white;
       text-align: center;
     }
@@ -23,11 +24,18 @@
       width: 180px;
       border-radius: 20px;
       margin-bottom: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     }
 
     h1 {
       margin-bottom: 10px;
-      font-size: 32px;
+      font-size: 34px;
+    }
+
+    .subtitle {
+      color: #ffb300;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
 
     p {
@@ -35,9 +43,29 @@
       color: #e0e0e0;
     }
 
+    .cta {
+      margin-top: 20px;
+    }
+
+    .cta a {
+      background: #ff9800;
+      color: black;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
     .section {
       margin-top: 40px;
       text-align: left;
+    }
+
+    h2 {
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      padding-bottom: 5px;
     }
 
     ul {
@@ -62,7 +90,18 @@
     <img src="appicon.png" alt="GS1 ScanVortex">
 
     <h1>GS1 ScanVortex</h1>
-    <p>Professional GS1 barcode scanner with AI parsing and validation</p>
+
+    <div class="subtitle">
+      GS1 Scanner & Validator
+    </div>
+
+    <p>
+      Scan GS1 barcodes, DataMatrix and QR codes with advanced AI parsing.
+    </p>
+
+    <div class="cta">
+      <a href="#" target="_blank">Get it on Google Play</a>
+    </div>
 
     <div class="section">
       <p>
@@ -72,7 +111,7 @@
 
       <p>
         The app allows you to quickly scan, validate and analyze GS1 barcodes. It automatically parses
-        Application Identifiers (AI) and displays structured data such as:
+        Application Identifiers (AI) and clearly displays structured data such as:
       </p>
 
       <ul>
