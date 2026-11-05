@@ -38,7 +38,7 @@
 <main id="main">
   <div class="shell doc-head">
     <h1>Polityka prywatności</h1>
-    <p class="doc-meta"><strong>Ostatnia aktualizacja: 14 września 2026</strong></p>
+    <p class="doc-meta"><strong>Ostatnia aktualizacja: 5 listopada 2026</strong></p>
 
     <div class="identity">
       <dl>
@@ -56,7 +56,7 @@
           <li><a href="#s1">Informacje ogólne</a></li>
           <li><a href="#s2">Przetwarzanie danych</a></li>
           <li><a href="#s3">Uprawnienia</a></li>
-          <li><a href="#s4">Reklamy (Google AdMob)</a></li>
+          <li><a href="#s4">Skanowanie (Google ML Kit)</a></li>
           <li><a href="#s5">Aktualizacje aplikacji (Google Play In-App Updates)</a></li>
           <li><a href="#s6">Kontakt</a></li>
         </ol>
@@ -65,13 +65,13 @@
       <div class="prose">
         <section id="s1" aria-labelledby="h1">
           <h2 id="h1"><span class="num">1.</span>Informacje ogólne</h2>
-          <p>Aplikacja GS1 ScanVortex została zaprojektowana z myślą o maksymalnej ochronie prywatności. Aplikacja nie gromadzi, nie przechowuje ani nie przesyła danych użytkownika na serwery zewnętrzne Twórcy.</p>
+          <p>Aplikacja GS1 ScanVortex została zaprojektowana z myślą o maksymalnej ochronie prywatności. Twórca nie prowadzi serwera gromadzącego dane z aplikacji. Aplikacja jest bezpłatna, bez reklam, zakupów i subskrypcji. Usługi Google opisano poniżej.</p>
         </section>
         <section id="s2" aria-labelledby="h2">
           <h2 id="h2"><span class="num">2.</span>Przetwarzanie danych</h2>
           <p>Wszystkie operacje, w tym skanowanie, walidacja oraz generowanie kodów, odbywają się <strong>wyłącznie lokalnie</strong> na urządzeniu Użytkownika.</p>
-          <p><strong>Historia skanów:</strong> Dane zapisywane w historii przechowywane są wyłącznie w pamięci urządzenia. Twórca nie ma do nich dostępu. Usunięcie aplikacji powoduje trwałe usunięcie tych danych.</p>
-          <p><strong>Eksport danych:</strong> Dane eksportowane przez użytkownika (np. do plików CSV) zapisywane są w lokalizacji wybranej przez użytkownika.</p>
+          <p><strong>Historia skanów:</strong> Historia i ustawienia są przechowywane lokalnie. Twórca nie ma do nich dostępu. Aplikacja dopuszcza systemową kopię zapasową Androida; zależnie od ustawień urządzenia dane mogą trafić do kopii na koncie Google lub zostać przeniesione na inne urządzenie. Odinstalowanie usuwa lokalne dane aplikacji, ale nie musi usuwać kopii systemowych ani wyeksportowanych plików.</p>
+          <p><strong>Eksport danych:</strong> Dane eksportowane przez użytkownika (np. do plików CSV) zapisywane są w lokalizacji wybranej przez użytkownika. Udostępnianie przekazuje wybrane pliki lub dane aplikacji wskazanej przez użytkownika. Importowany obraz i zawartość schowka są analizowane lokalnie.</p>
         </section>
         <section id="s3" aria-labelledby="h3">
           <h2 id="h3"><span class="num">3.</span>Uprawnienia</h2>
@@ -79,14 +79,12 @@
           <p><strong>Pamięć urządzenia:</strong> Wykorzystywana jedynie do zapisu danych generowanych lub eksportowanych przez użytkownika.</p>
         </section>
         <section id="s4" aria-labelledby="h4">
-          <h2 id="h4"><span class="num">4.</span>Reklamy (Google AdMob)</h2>
-          <p>Aplikacja korzysta z usług Google AdMob w celu wyświetlania reklam. Google może zbierać i przetwarzać dane w celu wyświetlania reklam oraz pomiaru ich skuteczności.</p>
-          <p><strong>Identyfikator reklamowy:</strong> Google przetwarza identyfikator reklamowy urządzenia (AAID). Aplikacja deklaruje w tym celu uprawnienie com.google.android.gms.permission.AD_ID oraz uprawnienia usług reklamowych Androida: ACCESS_ADSERVICES_AD_ID, ACCESS_ADSERVICES_TOPICS i ACCESS_ADSERVICES_ATTRIBUTION.</p>
-          <p><strong>Zgoda na reklamy:</strong> Do zebrania i zapamiętania Twojej decyzji aplikacja korzysta z certyfikowanej platformy zarządzania zgodą Google — User Messaging Platform (UMP). Jeżeli wymagają tego przepisy Twojego regionu (m.in. Europejski Obszar Gospodarczy, Wielka Brytania, Szwajcaria oraz wybrane stany USA), przy pierwszym uruchomieniu wyświetlany jest formularz zgody. Aplikacja nie wysyła żądania reklamy, zanim decyzja nie zostanie rozstrzygnięta.</p>
-          <p><strong>Przechowywanie decyzji:</strong> Decyzję zapamiętuje i przechowuje na urządzeniu platforma UMP. Aplikacja nie tworzy własnej kopii tego ustawienia i nie przesyła go nigdzie indziej.</p>
-          <p><strong>Reklamy spersonalizowane i niespersonalizowane:</strong> Po wyrażeniu zgody mogą być wyświetlane reklamy spersonalizowane. W razie odmowy aplikacja działa normalnie, a wyświetlane reklamy mają charakter niespersonalizowany.</p>
-          <p><strong>Zmiana decyzji:</strong> Decyzję można zmienić w dowolnym momencie w Ustawieniach aplikacji, w pozycji „Opcje prywatności reklam". Pozycja jest widoczna tam, gdzie możliwość zmiany decyzji jest wymagana przepisami.</p>
-          <p>Szczegółowe informacje dostępne są w polityce prywatności Google:
+          <h2 id="h4"><span class="num">4.</span>Skanowanie (Google ML Kit)</h2>
+          <p>Do rozpoznawania kodów z aparatu i importowanych obrazów aplikacja używa Google ML Kit. Rozpoznawanie odbywa się na urządzeniu; aplikacja nie wysyła obrazów ani treści kodów do Twórcy lub Google w celu ich rozpoznania.</p>
+          <p>SDK ML Kit zbiera i przesyła do Google dane diagnostyczne i statystyki użycia: informacje o urządzeniu i wersji aplikacji, identyfikatory instalacji SDK, konfigurację rozpoznawania, metryki wydajności oraz zdarzenia i błędy. Dane te służą diagnostyce i analizie użycia, a nie wyświetlaniu reklam; transmisja jest szyfrowana przez HTTPS.</p>
+          <p>Informacje o danych ML Kit:
+<a href="https://developers.google.com/ml-kit/android-data-disclosure" rel="noopener noreferrer" target="_blank">https://developers.google.com/ml-kit/android-data-disclosure</a>
+Polityka prywatności Google:
 <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">https://policies.google.com/privacy</a></p>
         </section>
         <section id="s5" aria-labelledby="h5">
@@ -98,6 +96,7 @@
           <p>W sprawach związanych z prywatnością lub działaniem aplikacji można skontaktować się pod adresem:</p>
           <p><a href="mailto:grzegorzgronski.dev@gmail.com">grzegorzgronski.dev@gmail.com</a></p>
         </section>
+
 
         <p class="callout" style="margin-top:34px">Treść tej strony jest identyczna z polityką prywatności wyświetlaną w aplikacji — w nakładce przy pierwszym uruchomieniu oraz w Ustawieniach.</p>
       </div>
