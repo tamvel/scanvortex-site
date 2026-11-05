@@ -3,7 +3,7 @@
 Mała strona produktowa z podstroną polityki prywatności. Statyczny HTML + CSS,
 **bez frameworka, bez JavaScriptu, bez czcionek z CDN, bez analityki i trackerów**.
 Jedyne odwołania na zewnątrz to linki, które użytkownik może kliknąć: Google Play,
-polityka prywatności Google i adres e‑mail.
+dokumentacja ML Kit, polityka prywatności Google i adres e‑mail.
 
 ## Struktura
 
@@ -54,7 +54,7 @@ pokazuje w nakładce prawnej przy pierwszym uruchomieniu oraz w
 
 Zgodność jest mierzona znak po znaku: po usunięciu znaczników `[b]`/`[url]`/`[email]`
 i normalizacji odstępów tekst zasobu i tekst podstrony są **identyczne**
-(3076 znaków PL, 2928 znaków EN). Zmieniona jest wyłącznie prezentacja: nagłówki
+Zmieniona jest wyłącznie prezentacja: nagłówki
 sekcji, spis treści, typografia i blok identyfikacji produktu.
 
 > **Zmieniając politykę prywatności, zmień OBA miejsca.** Rozjazd między tym, co widzi
